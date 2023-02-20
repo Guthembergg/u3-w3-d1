@@ -1,8 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
-import mainReducer from "../reducers";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import dataReducer from "../reducers/dataReducer";
+import favouriteReducer from "../reducers/favouriteReducer";
+
+const rootReducer = combineReducers({
+  favourite: favouriteReducer,
+  data: dataReducer,
+});
 
 const store = configureStore({
-  reducer: mainReducer,
+  reducer: rootReducer,
 });
 
 export default store;
