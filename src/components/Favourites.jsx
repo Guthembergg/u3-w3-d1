@@ -41,7 +41,7 @@ const Favourites = () => {
                     </p>
                   </div>
 
-                  <div>
+                  <div className="position-absolute ">
                     <a href={el.url} alt="link">
                       Webpage
                     </a>
