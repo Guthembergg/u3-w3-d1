@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.middle {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+}
+.starting {
+  position: absolute;
+  left: 30%;
+  top: -25px;
+}
+.ending {
+  position: absolute;
+  left: 70%;
+  top: -13px;
+}

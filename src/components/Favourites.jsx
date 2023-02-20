@@ -25,23 +25,26 @@ const Favourites = () => {
           return (
             <ListGroup.Item key={`key-${i}`}>
               <Row className="flex-d align-items-center">
+                {" "}
                 <Badge
-                  className="ml-3"
+                  className="ml-3 first"
                   variant="secondary"
                   style={{ fontWeight: "700", fontSize: "20px" }}
                 >
                   {i + 1}
                 </Badge>
-                <Col className="ml-3 d-flex justify-content-around align-items-center">
-                  <div>
-                    <p style={{ fontWeight: "700" }}>{el.title}</p>
+                <Col className="ml-3 d-flex justify-content-around align-items-center position-relative">
+                  <div className="starting">
+                    <p className="p-0 m-0" style={{ fontWeight: "700" }}>
+                      {el.title}
+                    </p>
                     <p>
                       <Link to={`/${el.company_name}`}>{el.company_name}</Link>{" "}
                       - {el.job_type}
                     </p>
                   </div>
 
-                  <div className="position-absolute ">
+                  <div className="middle ">
                     <a href={el.url} alt="link">
                       Webpage
                     </a>
@@ -50,12 +53,11 @@ const Favourites = () => {
                     </p>
                   </div>
 
-                  <div>
+                  <div className="ending">
                     <p>{el.candidate_required_location}</p>
                   </div>
                   {/* <p dangerouslySetInnerHTML={createMarkup(el.description)}></p> */}
                 </Col>
-
                 <Button
                   className="mr-5"
                   variant="danger"
