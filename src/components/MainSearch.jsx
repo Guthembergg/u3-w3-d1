@@ -36,7 +36,7 @@ const MainSearch = () => {
         >
           <h1>Remote Jobs Search</h1>
           <Link to={"/favourites"}>
-            <HeartFill></HeartFill>{" "}
+            <HeartFill></HeartFill>
             <Badge variant="primary">{numberSelect}</Badge>
           </Link>
         </Col>

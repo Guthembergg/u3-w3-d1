@@ -2,6 +2,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Heart, HeartFill } from "react-bootstrap-icons";
+import { HouseFill, X } from "react-bootstrap-icons";
 
 const Job = ({ data, i }) => {
   const dispatch = useDispatch();
